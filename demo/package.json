@@ -2,6 +2,7 @@
   "name": "react-tap-event-plugin-demo",
   "version": "0.0.1",
   "devDependencies": {
+<<<<<<< master
     "browserify": "11.2.0",
     "envify": "4.1.0",
     "react": "^16.0.0-0",
@@ -16,4 +17,14 @@
     "watch": "watchify src/application.js -o application.js -v"
   },
   "dependencies": {}
+=======
+    "browserify": "^11.1.0",
+    "fbjs": "^0.2.1",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "react-tap-event-plugin": "^0.2.2",
+    "reactify": "^1.1.1",
+    "watchify": "^3.4.0"
+  }
+>>>>>>> 6f55a84
 }
