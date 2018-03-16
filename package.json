@@ -3,8 +3,8 @@
 <<<<<<< master
   "version": "3.0.2",
 =======
-  "version": "0.2.2",
->>>>>>> 6f55a84
+  "version": "0.1.1",
+>>>>>>> cf5d01f
   "description": "Facebook's TapEventPlugin, temporarily available on npm until its made public in their repo",
   "main": "src/injectTapEventPlugin.js",
   "files": [
