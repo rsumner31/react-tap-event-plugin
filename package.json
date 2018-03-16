@@ -28,6 +28,9 @@
   "dependencies": {
     "fbjs": "^0.8.6"
   },
+  "dependencies": {
+    "fbjs": "^0.2.1"
+  },
   "bugs": "https://github.com/zilverline/react-tap-event-plugin/issues",
   "licenses": [
     {
