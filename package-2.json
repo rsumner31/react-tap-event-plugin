@@ -1,0 +1,56 @@
+{
+  "name": "react-tap-event-plugin",
+<<<<<<< master
+<<<<<<< master
+  "version": "3.0.2",
+=======
+  "version": "0.1.1",
+>>>>>>> cf5d01f
+=======
+  "version": "0.1.8",
+>>>>>>> 663d8f4
+  "description": "Facebook's TapEventPlugin, temporarily available on npm until its made public in their repo",
+  "main": "src/injectTapEventPlugin.js",
+  "files": [
+    "src/"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zilverline/react-tap-event-plugin.git"
+  },
+  "keywords": [
+    "TapEventPlugin",
+    "react",
+    "touch",
+    "delay",
+    "300ms",
+    "react-tap-event-plugin"
+  ],
+  "peerDependencies": {
+<<<<<<< master
+    "react": "^16.0.0-0",
+    "react-dom": "^16.0.0-0"
+  },
+  "dependencies": {
+    "fbjs": "^0.8.6"
+  },
+  "dependencies": {
+    "fbjs": "^0.2.1"
+=======
+    "fbjs": "^0.2.1",
+    "react": "^0.14.0-0 || ~0.13.x || ~0.12.x",
+    "react-dom": "^0.14.0-0"
+>>>>>>> 663d8f4
+  },
+  "bugs": "https://github.com/zilverline/react-tap-event-plugin/issues",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
+  "homepage": "http://facebook.github.io/react"
+}

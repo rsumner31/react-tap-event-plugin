@@ -1,0 +1,26 @@
+From 8615ca79546c32c1d1e3a80d85ca115dea58883c Mon Sep 17 00:00:00 2001
+From: Nick Young <americanpilot84@gmail.com>
+Date: Thu, 15 Mar 2018 19:44:05 -0400
+Subject: [PATCH] Add missing TypeScript property.
+
+---
+ src/Dialog/DialogActions.d.ts | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+diff --git a/src/Dialog/DialogActions.d.ts b/src/Dialog/DialogActions.d.ts
+index f0a48ec5f6..e443638d18 100644
+--- a/src/Dialog/DialogActions.d.ts
++++ b/src/Dialog/DialogActions.d.ts
+@@ -1,8 +1,11 @@
+ import * as React from 'react';
++
+ import { StandardProps } from '..';
+ 
+ export interface DialogActionsProps
+-  extends StandardProps<React.HTMLAttributes<HTMLDivElement>, DialogActionsClassKey> {}
++  extends StandardProps<React.HTMLAttributes<HTMLDivElement>, DialogActionsClassKey> {
++    disableActionSpacing?: boolean;
++  }
+ 
+ export type DialogActionsClassKey = 'root' | 'action';
+ 

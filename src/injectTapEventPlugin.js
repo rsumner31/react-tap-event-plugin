@@ -1,3 +1,4 @@
+<<<<<<< master
 var invariant = require('fbjs/lib/invariant');
 var defaultClickRejectionStrategy = require('./defaultClickRejectionStrategy');
 
@@ -22,5 +23,10 @@ should be injected by the application.'
 
   require('react-dom/lib/EventPluginHub').injection.injectEventPluginsByName({
     'TapEventPlugin':       require('./TapEventPlugin.js')(shouldRejectClick)
+=======
+module.exports = function injectTapEventPlugin () {
+  require('react/lib/EventPluginHub').injection.injectEventPluginsByName({
+    "TapEventPlugin":       require('./TapEventPlugin.js')
+>>>>>>> 663d8f4
   });
 };

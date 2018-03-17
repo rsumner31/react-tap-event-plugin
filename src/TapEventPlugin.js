@@ -127,6 +127,7 @@ function createTapEventPlugin(shouldRejectClick) {
      */
     extractEvents: function(
       topLevelType,
+<<<<<<< master
       targetInst,
       nativeEvent,
       nativeEventTarget
@@ -138,8 +139,21 @@ function createTapEventPlugin(shouldRejectClick) {
         if (shouldRejectClick(lastTouchEvent, now())) {
           return null;
         }
+=======
+      topLevelTarget,
+      topLevelTargetID,
+      nativeEvent,
+      nativeEventTarget) {
+
+    if (isTouch(topLevelType)) {
+      lastTouchEvent = now();
+    } else {
+      if (lastTouchEvent && (now() - lastTouchEvent) < ignoreMouseThreshold) {
+        return null;
+>>>>>>> 663d8f4
       }
 
+<<<<<<< master
       if (!isStartish(topLevelType) && !isEndish(topLevelType)) {
         return null;
       }
@@ -162,6 +176,27 @@ function createTapEventPlugin(shouldRejectClick) {
       }
       EventPropagators.accumulateTwoPhaseDispatches(event);
       return event;
+=======
+    if (!isStartish(topLevelType) && !isEndish(topLevelType)) {
+      return null;
+    }
+    var event = null;
+    var distance = getDistance(startCoords, nativeEvent);
+    if (isEndish(topLevelType) && distance < tapMoveThreshold) {
+      event = SyntheticUIEvent.getPooled(
+        eventTypes.touchTap,
+        topLevelTargetID,
+        nativeEvent,
+        nativeEventTarget
+      );
+    }
+    if (isStartish(topLevelType)) {
+      startCoords.x = getAxisCoordOfEvent(Axis.x, nativeEvent);
+      startCoords.y = getAxisCoordOfEvent(Axis.y, nativeEvent);
+    } else if (isEndish(topLevelType)) {
+      startCoords.x = 0;
+      startCoords.y = 0;
+>>>>>>> 663d8f4
     }
 
   };
